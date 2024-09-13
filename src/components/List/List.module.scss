@@ -1,0 +1,56 @@
+.list {
+  &:not(:last-child) {
+    margin-bottom: 24px;
+  }
+  &:last-child {
+    img {
+      margin: 0 3px
+    }
+  }
+
+  li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    cursor: pointer;
+
+    &.active {
+      background-color: white;
+      border-radius: 4px;
+      box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    i {
+      display: inline-flex;
+    }
+
+    .badge {
+      width: 10px;
+      height: 10px;
+      margin: 0 4px;
+      border-radius: 50%;
+      position: relative;
+
+      &_green {
+        background-color: #42B883;
+      }
+
+      &_blue {
+        background-color: #64C4ED;
+      }
+
+      &_pink {
+        background-color: #FFBBCC;
+      }
+
+      &_light-green {
+        background-color: #B6E6BD;
+      }
+
+      &_grey {
+        background-color: #C9D1D3;
+      }
+    }
+  }
+}

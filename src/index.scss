@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  outline: none;
+  font-family: 'Roboto', -apple-system, system-ui, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+}
+
+.todo {
+  margin: 48px;
+  border-radius: 8px;
+  box-shadow: 1px 1px 20px rgb(201, 200, 200);
+  border: 1px solid rgb(201, 200, 200);
+  font-size: 14px;
+  &__sidebar {
+    background-color: #F4F6F8;
+    max-width: 20%;
+    padding: 24px;
+  }
+}
