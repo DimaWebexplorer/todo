@@ -1,12 +1,4 @@
 .list {
-  &:not(:last-child) {
-    margin-bottom: 24px;
-  }
-  &:last-child {
-    img {
-      margin: 0 3px
-    }
-  }
 
   li {
     display: flex;

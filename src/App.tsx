@@ -1,49 +1,18 @@
-import List from "./components/List/List";
-import listSvg from './assets/icons/list.svg';
-import addSvg from './assets/icons/add.svg';
+import React from 'react';
+import ListHeader from './components/List/ListHeader/ListHeader';
+import ListGeneral from './components/List/ListGeneral/ListGeneral';
+import ListFooter from './components/List/ListFooter/ListFooter';
 
 function App() {
+  const [state, setState] = React.useState('Hello');
   return (
     <div className="todo">
       <div className="todo__sidebar">
-        <List items={[
-          {
-            icon: listSvg,
-            name: 'Все задачи',
-            active: true,
-          }
-        ]} />
+        <ListHeader />
 
-        <List items={[
-          {
-            color: 'green',
-            name: 'Покупки',
-          },
-          {
-            color: 'blue',
-            name: 'Фронтенд',
-          },
-          {
-            color: 'pink',
-            name: 'Фильмы и сериалы',
-          },
-          {
-            color: 'light-green',
-            name: 'Книги',
-          },
-          {
-            color: 'grey',
-            name: 'Личное',
-          },
+        <ListGeneral />
 
-        ]} isRemovable />
-
-        <List items={[
-          {
-            icon: addSvg,
-            name: 'Добавить папку',
-          }
-        ]} />
+        <ListFooter />
       </div>
       <div className="todo__tasks"></div>
     </div>
