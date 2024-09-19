@@ -1,5 +1,6 @@
 import List from "../List";
 import scss from './ListGeneral.module.scss';
+/* import dataBase from '../../../assets/database.json'; */
 
 export default function ListGeneral(): JSX.Element {
     return (

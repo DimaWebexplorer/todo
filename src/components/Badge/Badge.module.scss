@@ -1,0 +1,10 @@
+.badge {
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    border: 2px solid transparent;
+
+    &_active {
+        border-color: #525252;
+    }
+}

@@ -10,15 +10,16 @@ interface Item {
 interface ListProps {
     items: Item[];
     isRemovable?: boolean;
+    click?: () => void;
 }
 
 
-export default function List({ items, isRemovable }: ListProps): JSX.Element {
+export default function List({ items, isRemovable, click }: ListProps): JSX.Element {
     if (isRemovable) { 
         console.log('isRemovable')
     }
     return (
-        <ul className={scss.list}>
+        <ul onClick={click} className={scss.list}>
             {
                 items.map((item, index) => (
                     <li key={index} className={item.active ? scss.active : ""}>
